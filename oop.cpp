@@ -94,8 +94,9 @@ int main()
     for(i=0;i<n;i++)
     {
         emp[i].getdata();
-        cout<<"\n";
+        
         cout<<"Enter details of next Employee:";
+        cout<<"\n";
     }
     cout<<"\n";
     cout<<"The entered details are as under:"<<"\n";
@@ -106,6 +107,6 @@ int main()
     }
 
 
- 
+ cout<<"\n******************END OF CODE********************************************";
  return 0;
 }
