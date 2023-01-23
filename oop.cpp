@@ -81,16 +81,30 @@ void Employee::showdata(){
 
 int main()
 {
+    int n,i;
     cout<<"\n**********************************************************************";
     cout<<"\n TCS EMPLOYEE INFORMATION MANAGEMENT SYSTEM";
     cout<<"\n**********************************************************************";
     cout<<"\nEnter Employee Information Below:"<<"\n";
     
 
-    Employee employee1;
-    employee1.getdata();
-    employee1.calsalary();
-    employee1.showdata();
+    cout<<"Enter number of employees: ";
+    cin>>n;
+    Employee emp[n];
+    for(i=0;i<n;i++)
+    {
+        emp[i].getdata();
+        cout<<"\n";
+        cout<<"Enter details of next Employee:";
+    }
+    cout<<"\n";
+    cout<<"The entered details are as under:"<<"\n";
+    for(i=0;i<n;i++)
+    {
+        emp[i].calsalary();
+        emp[i].showdata();
+    }
+
 
  
  return 0;
